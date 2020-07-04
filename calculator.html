@@ -1,0 +1,67 @@
+<html>
+<head>
+<script >
+
+	function displaynum(a)
+    {        
+      forms.display.value+=a ;
+	   return "num";
+	}
+    function evalto(){
+	    forms.display.value= eval(forms.display.value) ;
+		return "calculate ans";
+		}		
+    function ac(){
+	        forms.display.value="0";
+			return "clear all";
+			}
+	function backspace(){
+         var prevalue=forms.display.value;
+           forms.display.value=prevalue.substr(0,prevalue.lenght-1);
+		   return "delete one symboll";
+}
+     function sqrt(){
+	      forms.display.value=Math.pow(forms.display.value,1/2);
+		  return "squart root";
+		  }
+
+		        
+	 	   
+</script>
+</head>
+<body>
+<div>
+<form name="forms">
+<input type="text"name="display"><br><br>
+<input type="button" name="btnsqrt" value="RT" onclick="sqrt()" >
+<input type="button" name="btnabs" value="ABS" ><br><br>
+
+<input type="button" name="btn9" value="9" onclick="displaynum(9)">
+<input type="button" name="btn8" value="8" onclick="displaynum(8)">
+<input type="button" name="btn7" value="7" onclick="displaynum(7)">
+<input type="button" name="btndel" value="DEL"onclick="backspace()">
+<input type="button" name="btnac" value="AC" onclick="ac()" ><br><br>
+
+<input type="button" name="btn4" value="4" onclick="displaynum(4)">
+<input type="button" name="btn5" value="5" onclick="displaynum(5)">
+<input type="button" name="btn6" value="6" onclick="displaynum(6)">
+<input type="button" name="btnsub" value="-" onclick="displaynum('-')">
+<input type="button" name="btnadd" value="+" onclick="displaynum('+')"><br><br>
+
+<input type="button" name="btn1" value="1" onclick="displaynum(1)">
+<input type="button" name="btn2" value="2" onclick="displaynum(2)">
+<input type="button" name="btn3" value="3" onclick="displaynum(3)">
+<input type="button" name="btnsmul" value="*" onclick="displaynum('*')">
+<input type="button" name="btnadiv" value="/" onclick="displaynum('/')"><br><br>
+
+<input type="button" name="btnzero" value="0" onclick="displaynum('0')">
+<input type="button" name="btntwozero" value="00" onclick="displaynum(00)">
+<input type="button" name="btnptn" value="." onclick="displaynum('.')">
+<input type="button" name="btnsmul" value="*" onclick="displaynum('*')">
+<input type="button" name="btnequal "value="=" onclick="evalto()"><br><br>
+
+</form>
+
+</div>
+</body>
+</html>
