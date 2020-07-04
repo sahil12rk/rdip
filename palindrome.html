@@ -1,0 +1,41 @@
+<html>
+<head><title>palindrome</title>
+
+</head>
+<body>
+<h2 style="text-align:center;">palindrome</h2>
+ <input type="text"value="" id="text"><br>
+ <input type="submit" value ="check"onclick=" return palindrome()">
+ 
+ <script  >
+	      
+			   function palindrome(){
+     
+	   inpString= document.getElementById("text").value;
+	      revString ="";
+	      i=inpString.length;
+	   for(var j=i;j>=0;j--)
+	   { 
+	     revString=revString+inpString.charAt(j);
+		// document.write(revString+"<br>");
+		  }
+		 
+          if(revString==inpString){
+		   alert("palindrome")
+            return true;
+         }
+        else{
+		         alert("not palindrome")		   
+             return false;
+               
+           }	
+          return "string is palindrome or not"	;	   
+   }
+			   
+			   
+ 
+</script>
+ 
+ 
+</body>
+</html>
