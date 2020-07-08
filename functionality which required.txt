@@ -1,0 +1,7 @@
+          EXPERIMENT 
+		    
+			1>  create dropdown menu for language hindi and english. 
+			2>  create buttons with jumbled words .
+			3>  function to recognized the grammatically correct sentense.
+			4>  buttons with function which reform the same set of buttons with jumbled words.
+                        5>  button with function which shows the correct answer.			
